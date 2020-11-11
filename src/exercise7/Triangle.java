@@ -1,6 +1,9 @@
 package exercise7;
 
 import java.util.Scanner;
+package exercise7;
+
+import java.util.Scanner;
 
 public class Triangle {
     public static void main(String[] args) {
@@ -22,7 +25,9 @@ public class Triangle {
         for(start=0;start<end;start++)
         {
             for(start=1;start<=end;start++)
-            {System.out.print(start+" ");}
+            {if(start==end){System.out.print(start);}
+             else System.out.print(start+" ");
+            }
         }
         System.out.println();
 
