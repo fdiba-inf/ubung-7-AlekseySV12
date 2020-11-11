@@ -14,6 +14,7 @@ public class RecursivePrimePrinter {
     }
 
     public static void printPrimes(int n) {
+
         if(n==1) {System.out.println(n);}
         else {
             if(isPrime(n)) System.out.println(n);
@@ -25,11 +26,10 @@ public class RecursivePrimePrinter {
     public static boolean isPrime(int n) {
 
         boolean prime=true;
-        for(int i=2; i<Math.sqrt(n);i++){
-            if(n%i==0){
+        for(int i=2;i<n;i++){
+            if(n%i ==0){
                 prime=false;
             }
-
         }
         return prime;
     }
